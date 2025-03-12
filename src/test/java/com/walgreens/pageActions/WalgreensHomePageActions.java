@@ -15,10 +15,11 @@ public class WalgreensHomePageActions {
 	}
 	//search functionality
 	public void searchItem(){
+		WalgreensHomePageLocatorsObj.searchBox.sendKeys("Sunscreen");
 		
 	}
 	public void searchBtn(){
-		
+		WalgreensHomePageLocatorsObj.searchBtn.click();
 	}
 	//click on shop navbar link
 	public void clickOnShop(){
