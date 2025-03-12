@@ -18,7 +18,8 @@ public class WalgreensHomePageActions {
 		WalgreensHomePageLocatorsObj.searchBox.sendKeys("Sunscreen");
 		
 	}
-	public void searchBtn(){
+	public void searchBtn() throws InterruptedException{
+		Thread.sleep(5000);
 		WalgreensHomePageLocatorsObj.searchBtn.click();
 	}
 	//click on shop navbar link
