@@ -4,6 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 //Fahmida
 public class WalgreensHomePageLocators {
+	//search functionality
+	@FindBy(xpath="//input[@placeholder='Search']")
+	public WebElement searchBox;
+	@FindBy(xpath="//button[@type='submit']")
+	public WebElement searchBtn;
     //shop dropdown link
 	@FindBy(xpath="//a[@data-reactid='393']")
 	public WebElement shopLink;

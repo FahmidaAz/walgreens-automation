@@ -13,7 +13,15 @@ public class WalgreensHomePageActions {
 		WalgreensHomePageLocatorsObj = new WalgreensHomePageLocators();
 		PageFactory.initElements(SetupDrivers.driver, WalgreensHomePageLocatorsObj);
 	}
-	
+	//search functionality
+	public void searchItem(){
+		WalgreensHomePageLocatorsObj.searchBox.sendKeys("Sunscreen");
+		
+	}
+	public void searchBtn() throws InterruptedException{
+		Thread.sleep(5000);
+		WalgreensHomePageLocatorsObj.searchBtn.click();
+	}
 	//click on shop navbar link
 	public void clickOnShop(){
 		WalgreensHomePageLocatorsObj.shopLink.click();	
