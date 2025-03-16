@@ -1,0 +1,42 @@
+[33m818dcae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfahmida-qa-branch[m[33m, [m[1;31morigin/fahmida-qa-branch[m[33m)[m HEAD@{0}: pull origin fahmida-qa-branch --rebase: Fast-forward
+[33mf9edaa5[m HEAD@{1}: checkout: moving from main to fahmida-qa-branch
+[33ma7e722d[m[33m ([m[1;32mmain[m[33m)[m HEAD@{2}: commit: search eature done
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{3}: checkout: moving from fahmida-qa-branch to main
+[33mf9edaa5[m HEAD@{4}: commit: search functionality done
+[33m0dc47f1[m HEAD@{5}: checkout: moving from sharmin-qa-branch to fahmida-qa-branch
+[33m8735771[m[33m ([m[1;32msharmin-qa-branch[m[33m)[m HEAD@{6}: commit: one feature file done
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{7}: checkout: moving from fahmida-qa-branch to sharmin-qa-branch
+[33m0dc47f1[m HEAD@{8}: checkout: moving from 2162969d596a413d8cc36c3129d98243fbd082b9 to fahmida-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{9}: checkout: moving from main to ratan-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{10}: checkout: moving from fahmida-qa-branch to main
+[33m0dc47f1[m HEAD@{11}: commit: first scenario
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{12}: checkout: moving from sakib-qa-branch to fahmida-qa-branch
+[33mf2d117b[m[33m ([m[1;32msakib-qa-branch[m[33m)[m HEAD@{13}: commit: first scenario
+[33m832dc9a[m HEAD@{14}: commit: first scenario done
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{15}: checkout: moving from saiful-qa-branch to sakib-qa-branch
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{16}: checkout: moving from mahfuz-qa-branch to saiful-qa-branch
+[33mbcbb111[m[33m ([m[1;32mmahfuz-qa-branch[m[33m)[m HEAD@{17}: checkout: moving from fahmida-qa-branch to mahfuz-qa-branch
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{18}: checkout: moving from fahmida-qa-branch to fahmida-qa-branch
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{19}: checkout: moving from saiful-qa-branch to fahmida-qa-branch
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{20}: checkout: moving from fahmida-qa-branch to saiful-qa-branch
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{21}: checkout: moving from ratan-qa-branch to fahmida-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{22}: checkout: moving from zia-qa-branch to ratan-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{23}: checkout: moving from sharmin-qa-branch to zia-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{24}: checkout: moving from mahfuz-qa-branch to sharmin-qa-branch
+[33mbcbb111[m[33m ([m[1;32mmahfuz-qa-branch[m[33m)[m HEAD@{25}: commit: added to mahfuz branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{26}: checkout: moving from fahmida-qa-branch to mahfuz-qa-branch
+[33m0c4680a[m[33m ([m[1;32msaiful-qa-branch[m[33m)[m HEAD@{27}: commit: testing scaliton done
+[33m368b5e2[m HEAD@{28}: commit: add to fahmida's branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{29}: checkout: moving from ratan-qa-branch to fahmida-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{30}: checkout: moving from zia-qa-branch to ratan-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{31}: checkout: moving from sharmin-qa-branch to zia-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{32}: checkout: moving from mahfuz-qa-branch to sharmin-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{33}: checkout: moving from main to mahfuz-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{34}: checkout: moving from fahmida-qa-branch to main
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{35}: checkout: moving from main to fahmida-qa-branch
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{36}: checkout: moving from main to main
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{37}: Branch: renamed refs/heads/main to refs/heads/main
+[33m2162969[m[33m ([m[1;32mzia-qa-branch[m[33m)[m HEAD@{39}: commit: first commit
+[33m55ea4f3[m HEAD@{40}: commit: testing
+[33m946e37a[m HEAD@{41}: Branch: renamed refs/heads/master to refs/heads/main
+[33m946e37a[m HEAD@{43}: commit (initial): first commit
