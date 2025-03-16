@@ -9,12 +9,13 @@ import walgreens.utilities.SetupDrivers;
 
 public class WalgreensVerifyBrandPageActions {
 	WalgreensVerifyBrandPageLocators WalgreensVerifyBrandPageLocatorsObj;
-	public WalgreensVerifyBrandPageActions(){
+
+	public WalgreensVerifyBrandPageActions() {
 		WalgreensVerifyBrandPageLocatorsObj = new WalgreensVerifyBrandPageLocators();
 		PageFactory.initElements(SetupDrivers.driver, WalgreensVerifyBrandPageLocatorsObj);
 	}
-	
-	public void verifyBrand(){
-		Assert.assertTrue(WalgreensVerifyBrandPageLocatorsObj.verifyBrand.isDisplayed());
+
+	public void verifyBrand() {
+		Assert.assertTrue(WalgreensVerifyBrandPageLocatorsObj.verifyHeader.isDisplayed());
 	}
 }
