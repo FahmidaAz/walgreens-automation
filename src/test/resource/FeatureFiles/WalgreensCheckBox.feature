@@ -1,13 +1,12 @@
-@regression
-Feature: Walgreens Checkbox functionality for shop dropdown
+Feature: Navigate to Mats Category and Filter by GoFit Brand
 
-  Background: 
-    Given Open Walgreens Homepage
-
-  Scenario: Walgreens filter items through Checkbox
-    Given Open Walgreens Homepage
-    When Click on "Shop" dropdown
-    And Select and click on "Vitamins & Suppliments"
-    And Select and click on "Multivitamins"
-    And Select and click on "Women's Multivitamins"
-    Then "Women's multivitamin" related product will showed up
+  Scenario: User navigates to Mats category and filters by GoFit brand
+    Given the user is on the Walgreens homepage
+    When the user hovers over the "Shop Products" dropdown
+    And the user clicks on "Fitness & Exercise" from the dropdown
+    And the user clicks on "Yoga & Pilates" from the subcategory dropdown
+    And the user clicks on "Mats" from the filtered category
+    Then the "Mats" category page should be displayed
+    When the user expands the "Brand" filter
+    And the user clicks on the "GoFit" brand
+    Then the product list should be filtered to show only "GoFit" mats

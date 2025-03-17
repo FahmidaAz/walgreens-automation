@@ -7,8 +7,9 @@ import cucumber.api.java.en.Then;
 public class WalgreensVerifyBrandName {
 	WalgreensVerifyBrandPageActions WalgreensVerifyBrandPageActionsObj = new WalgreensVerifyBrandPageActions();
 
-	@Then("^\"([^\"]*)\" related product will showed up$")
-	public void related_product_will_showed_up(String arg1) throws Throwable {
-		WalgreensVerifyBrandPageActionsObj.verifyBrand();
+	@Then("^the product list should be filtered to show only \"([^\"]*)\" mats$")
+	public void the_product_list_should_be_filtered_to_show_only_mats(String arg1) throws Throwable {
+		WalgreensVerifyBrandPageActionsObj.verifyBrandName();
 	}
+
 }

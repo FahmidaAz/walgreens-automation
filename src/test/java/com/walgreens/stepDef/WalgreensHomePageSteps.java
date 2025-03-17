@@ -27,24 +27,30 @@ public class WalgreensHomePageSteps {
 	}
 
 	// checkbox functionality
-	@Given("^Open Walgreens Homepage$")
-	public void open_Walgreens_Homepage() throws Throwable {
-
+	@Given("^the user is on the Walgreens homepage$")
+	public void the_user_is_on_the_Walgreens_homepage() throws Throwable {
+		WalgreensHomePageActionsObj.verifyHomepage();
 	}
 
-	@When("^Click on \"([^\"]*)\" dropdown$")
-	public void click_on_dropdown(String arg1) throws Throwable {
-		WalgreensHomePageActionsObj.clickOnShop();
+	@When("^the user hovers over the \"([^\"]*)\" dropdown$")
+	public void the_user_hovers_over_the_dropdown(String arg1) throws Throwable {
+		WalgreensHomePageActionsObj.clickShopLink(); 
 	}
 
-	@When("^Select and click on \"([^\"]*)\"$")
-	public void select_and_click_on(String arg1) throws Throwable {
+	@When("^the user clicks on \"([^\"]*)\" from the dropdown$")
+	public void the_user_clicks_on_from_the_dropdown(String arg1) throws Throwable {
+		WalgreensHomePageActionsObj.clickFitnessLink(); 
+	}
+
+	@When("^the user clicks on \"([^\"]*)\" from the subcategory dropdown$")
+	public void the_user_clicks_on_from_the_subcategory_dropdown(String arg1) throws Throwable {
+		WalgreensHomePageActionsObj.clickYogaLink();
+	}
+
+	@When("^the user clicks on \"([^\"]*)\" from the filtered category$")
+	public void the_user_clicks_on_from_the_filtered_category(String arg1) throws Throwable {
 		Thread.sleep(5000);
-		WalgreensHomePageActionsObj.clickOnVitamin();
-		Thread.sleep(5000);
-		WalgreensHomePageActionsObj.clickOnMultivitamin();
-		Thread.sleep(5000);
-		WalgreensHomePageActionsObj.clickOnWomenMultivitamin();
+		WalgreensHomePageActionsObj.clickMatLink();
 	}
 	
 	//Shop now checkbox functionality

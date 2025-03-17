@@ -20,16 +20,15 @@ public class WalgreensBrandFilterCheckboxPageActions {
 		WalgreensBrandPageLocatorsObj = new WalgreensBrandPageLocators();
 		PageFactory.initElements(SetupDrivers.driver, WalgreensBrandPageLocatorsObj);
 	}
-
-	public void filterWalgreeenBrand() throws InterruptedException {
-
-		WebElement element = wait.until(ExpectedConditions.visibilityOf(WalgreensBrandPageLocatorsObj.brandCheckbox));
-
-		JavascriptExecutor js = (JavascriptExecutor) SetupDrivers.driver;
-		js.executeScript("arguments[0].scrollIntoView(true);", element);
-		Thread.sleep(1000);
-		js.executeScript("arguments[0].click();", element);
-
+   public void verifyItemAppears(){
+	   WalgreensBrandPageLocatorsObj.verifyItem.isDisplayed(); 
+   }
+   public void scrollDownToBrand(){
+	   JavascriptExecutor js = (JavascriptExecutor)SetupDrivers.driver;
+	   js.executeScript("window.scrollBy(0,500);");
+   }
+	public void clickChkBox(){
+		 WalgreensBrandPageLocatorsObj.chkBxLink.click();	
 	}
 
 }

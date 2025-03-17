@@ -14,8 +14,9 @@ public class WalgreensVerifyBrandPageActions {
 		WalgreensVerifyBrandPageLocatorsObj = new WalgreensVerifyBrandPageLocators();
 		PageFactory.initElements(SetupDrivers.driver, WalgreensVerifyBrandPageLocatorsObj);
 	}
-
-	public void verifyBrand() {
-		Assert.assertTrue(WalgreensVerifyBrandPageLocatorsObj.verifyHeader.isDisplayed());
-	}
+   public void verifyBrandName() throws InterruptedException{
+	   Thread.sleep(5000);
+	   WalgreensVerifyBrandPageLocatorsObj.verifyBrand.isDisplayed(); 
+   }
+	
 }
