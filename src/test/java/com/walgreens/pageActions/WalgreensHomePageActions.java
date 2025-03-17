@@ -25,28 +25,29 @@ public class WalgreensHomePageActions {
 		Thread.sleep(5000);
 		WalgreensHomePageLocatorsObj.searchBtn.click();
 	}
-
-	// click on shop navbar link
-	public void clickOnShop() {
+//checkBox functionality
+	public void verifyHomepage(){
+		WalgreensHomePageLocatorsObj.logoLink.isDisplayed();
+	}
+	public void clickShopLink() throws InterruptedException{
+		Thread.sleep(5000);
 		WalgreensHomePageLocatorsObj.shopLink.click();
 	}
-
-	// click on vitamin and suppliments
-	public void clickOnVitamin() {
-		WalgreensHomePageLocatorsObj.vitaminsOption.click();
-	}
-
-	// click on multivitamin
-	public void clickOnMultivitamin() {
-		WalgreensHomePageLocatorsObj.multivitamins.click();
-	}
-
-	// click on womens multivitamin
-	public void clickOnWomenMultivitamin() throws InterruptedException {
+	public void clickFitnessLink() throws InterruptedException{
 		Thread.sleep(5000);
-		WalgreensHomePageLocatorsObj.womenMultivitamin.click();
-		
+		WalgreensHomePageLocatorsObj.FitnessLink.click();
 	}
+	public void clickYogaLink() throws InterruptedException{
+		Thread.sleep(5000);
+		WalgreensHomePageLocatorsObj.yogaLink.click();
+	}
+	public void clickMatLink() throws InterruptedException{
+		Thread.sleep(5000);
+		JavascriptExecutor js = (JavascriptExecutor)SetupDrivers.driver;
+		js.executeScript("arguments[0].click();",WalgreensHomePageLocatorsObj.matsLink );
+	}
+	
+	
 	//click on shopNow button
 	public void clickShopBtn(){
 		WalgreensHomePageLocatorsObj.shopNowBtn.click();

@@ -10,19 +10,19 @@ public class WalgreensHomePageLocators {
 	public WebElement searchBox;
 	@FindBy(xpath = "//button[@type='submit']")
 	public WebElement searchBtn;
-	// shop dropdown link
-	@FindBy(xpath = "//li[@id='menu-shop-products']//a")
+	
+	//checkbox functionality
+	@FindBy(xpath="//a[@aria-label='Walgreens Home']")
+	public WebElement logoLink;
+	@FindBy(xpath="//a[@data-element-name='Shop']")
 	public WebElement shopLink;
-
-	@FindBy(xpath = "//li[@id='mega-dropdown__12__359441-tier1']/a")
-	public WebElement vitaminsOption;
-
-	@FindBy(xpath = "//li[@id='mega-dropdown__12-1__360567-tier2general']/a")
-	public WebElement multivitamins;
-
-	@FindBy(xpath = "//li[@id='mega-dropdown__12-1-0__361617-tier3']/a")
-	public WebElement womenMultivitamin;
-
+	@FindBy(xpath="//a[@data-element-name='Fitness & Nutrition']")
+	public WebElement FitnessLink;
+    @FindBy(xpath="//a[@data-element-name='Yoga & Pilates']")
+    public WebElement yogaLink;
+    @FindBy(xpath="//a[@data-element-name='Mats']")
+    public WebElement matsLink;
+    
 	//Shop now button locator
 	@FindBy(xpath="//span[@aria-describedby='beauty-tile-1-header']")
 	public WebElement shopNowBtn;
