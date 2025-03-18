@@ -59,5 +59,18 @@ public class WalgreensHomePageSteps {
 		Thread.sleep(5000);
 		WalgreensHomePageActionsObj.clickShopBtn(); 
 	}
+	
+	//Search from excel file
+	@When("^the user enters the item from Excel in the search box$")
+	public void the_user_enters_the_item_from_Excel_in_the_search_box() throws Throwable {
+		Thread.sleep(5000);
+		WalgreensHomePageActionsObj.searchExcel();
+	}
+
+	@When("^the user clicks the search button$")
+	public void the_user_clicks_the_search_button() throws Throwable {
+		WalgreensHomePageActionsObj.searchBtn();
+		
+	}
 
 }

@@ -1,10 +1,13 @@
 package com.walgreens.pageActions;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.walgreens.pageElements.WalgreensHomePageLocators;
 
+import walgreens.utilities.ReadExcelSheets;
 import walgreens.utilities.SetupDrivers;
 
 public class WalgreensHomePageActions {
@@ -16,7 +19,8 @@ public class WalgreensHomePageActions {
 	}
 
 	// search functionality
-	public void searchItem() {
+	public void searchItem() throws Exception {
+		WalgreensHomePageLocatorsObj.searchBox.sendKeys(Keys.CLEAR);
 		WalgreensHomePageLocatorsObj.searchBox.sendKeys("Sunscreen");
 
 	}
@@ -53,4 +57,28 @@ public class WalgreensHomePageActions {
 		WalgreensHomePageLocatorsObj.shopNowBtn.click();
 	}
 
+	//search from excel file
+	public void searchExcel() throws Exception{
+		JavascriptExecutor js = (JavascriptExecutor) SetupDrivers.driver;
+
+	    // Clear the search box
+	    js.executeScript("arguments[0].value = '';", WalgreensHomePageLocatorsObj.searchBox);
+
+	    // Retrieve the item from Excel
+	    String item = ReadExcelSheets.getMapData("Item");
+
+	    // Set the new value in the search box
+	    js.executeScript("arguments[0].value = arguments[1];", WalgreensHomePageLocatorsObj.searchBox, item);
+
+	    // Trigger input event to simulate typing behavior
+	    js.executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", WalgreensHomePageLocatorsObj.searchBox);
+
+	    // Introduce a small wait to allow dropdown suggestions to appear
+	    Thread.sleep(2000);
+
+	    // Option 1: Simulate pressing Enter key to trigger search
+	    WalgreensHomePageLocatorsObj.searchBox.sendKeys(Keys.ENTER);
+		   
+	}
+	
 }
