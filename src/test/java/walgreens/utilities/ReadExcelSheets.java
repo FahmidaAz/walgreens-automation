@@ -24,7 +24,7 @@ public class ReadExcelSheets {
 		
 		Map<String, Map<String, String>> excelFileMap = new HashMap<String, Map<String, String>>();
 		Map<String, String> dataMap = new HashMap<String, String>();
-		for (int i = 0; i<=lastRow; i++){					//Looping over entire row
+		for (int i = 1; i<=lastRow; i++){					//Looping over entire row
 			Row row = sheet.getRow(i);
 			Cell keyCell = row.getCell(0); 					//0th cell as key
 			Cell valueCell = row.getCell(1);				//1st cell as value

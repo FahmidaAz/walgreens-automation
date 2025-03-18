@@ -8,7 +8,7 @@ public class WalgreensHomePageLocators {
 	// search functionality
 	@FindBy(xpath = "//input[@placeholder='Search']")
 	public WebElement searchBox;
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[@aria-label='Search']//*[name()='svg']")
 	public WebElement searchBtn;
 	
 	//checkbox functionality

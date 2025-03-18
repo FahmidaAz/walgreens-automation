@@ -16,4 +16,8 @@ public class WalgreensSearchResultActions {
 		Thread.sleep(5000);
 		WalgreensSearchResultLocatorsObj.searchResult.isDisplayed();
 	}
+	public void verifyExcelItem() throws InterruptedException{
+		Thread.sleep(5000);
+		WalgreensSearchResultLocatorsObj.excelItem.isDisplayed();
+	}
 }
