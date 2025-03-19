@@ -1,34 +1,37 @@
 package com.walgreens.pageActions;
 
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.walgreens.pageElements.WalgreensHomePageLocators;
 
 import walgreens.utilities.SetupDrivers;
 
 public class WalgreensHomePageActions {
+	
 	WalgreensHomePageLocators WalgreensHomePageLocatorsObj;
-	public WalgreensHomePageActions(){
-		WalgreensHomePageLocatorsObj = new WalgreensHomePageLocators();
-		PageFactory.initElements(SetupDrivers.driver, WalgreensHomePageLocatorsObj);
+	SetupDrivers driver;
+	
+	
+	public WalgreensHomePageActions(WebDriver driver){
+		
+		SetupDrivers.driver = driver;
+        WalgreensHomePageLocatorsObj = new WalgreensHomePageLocators(driver);
+        
 	}
 	
-	//click on shop navbar link
-	public void clickOnShop(){
-		WalgreensHomePageLocatorsObj.shopLink.click();	
-	}
-	//click on vitamin and suppliments
-	public void clickOnVitamin(){
-		WalgreensHomePageLocatorsObj.vitaminsOption.click();
-	}
-	//click on multivitamin
-	public void clickOnMultivitamin(){
-		WalgreensHomePageLocatorsObj.multivitamins.click();
-	}
-	//click on womens multivitamin
-	public void clickOnWomenMultivitamin(){
-		WalgreensHomePageLocatorsObj.womenMultivitamin.click();
+	public void searchProduct(String productName) throws Exception{
+		WalgreensHomePageLocatorsObj.searchTextBox.sendKeys(productName);
+		
+		
 	}
 	
+	public void clickSearchButton() throws Exception{
+		WalgreensHomePageLocatorsObj.searchButton.click();
+		Thread.sleep(4000);
+	}
+	
+
 }
