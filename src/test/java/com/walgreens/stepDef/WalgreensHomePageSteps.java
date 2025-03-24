@@ -1,7 +1,6 @@
 package com.walgreens.stepDef;
 
 import com.walgreens.pageActions.WalgreensHomePageActions;
-
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -70,7 +69,28 @@ public class WalgreensHomePageSteps {
 	@When("^the user clicks the search button$")
 	public void the_user_clicks_the_search_button() throws Throwable {
 		WalgreensHomePageActionsObj.searchBtn();
-		
+	}	
+	
+	
+	@Given("^User is on the Walgreens home page$")
+	public void user_is_on_the_Walgreens_home_page() throws Throwable {
+	   
+	}
+
+	@When("^User searches for \"([^\"]*)\"$")
+	public void user_searches_for(String productName) throws Throwable {
+		WalgreensHomePageActionsObj.searchProduct(productName);
+	}
+	
+	@When("^User clicks the search button$")
+	public void user_clicks_the_search_button() throws Throwable {
+		WalgreensHomePageActionsObj.clickSearchButton();
+
+	}
+	
+	@Given("^Open Walgreens Homepage$")
+	public void open_Walgreens_Homepage() throws Throwable {
+	  
 	}
 
 }
