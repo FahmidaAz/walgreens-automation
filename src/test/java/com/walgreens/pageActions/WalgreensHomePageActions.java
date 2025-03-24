@@ -1,9 +1,15 @@
 package com.walgreens.pageActions;
 
+
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import java.time.Duration;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import com.walgreens.pageElements.WalgreensHomePageLocators;
 
@@ -11,11 +17,14 @@ import walgreens.utilities.ReadExcelSheets;
 import walgreens.utilities.SetupDrivers;
 
 public class WalgreensHomePageActions {
+	
 	WalgreensHomePageLocators WalgreensHomePageLocatorsObj;
+
 
 	public WalgreensHomePageActions() {
 		WalgreensHomePageLocatorsObj = new WalgreensHomePageLocators();
 		PageFactory.initElements(SetupDrivers.driver, WalgreensHomePageLocatorsObj);
+
 	}
 
 	// search functionality
@@ -78,7 +87,16 @@ public class WalgreensHomePageActions {
 
 	    // Option 1: Simulate pressing Enter key to trigger search
 	    WalgreensHomePageLocatorsObj.searchBox.sendKeys(Keys.ENTER);
+	}
 		   
+	public void searchProduct(String productName) throws Exception{
+	WalgreensHomePageLocatorsObj.searchTextBox.sendKeys(productName);
+		
+	}
+	public void clickSearchButton() throws Exception{
+		WalgreensHomePageLocatorsObj.searchButton.click();
+		Thread.sleep(4000);
 	}
 	
+
 }
