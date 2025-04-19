@@ -6,6 +6,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import java.io.File;
 
 public class UsersRestAssuredActions {
+	
 	public void createUser() {
 		given().														//Request Payload
 		body(new File(System.getProperty("user.dir") 
