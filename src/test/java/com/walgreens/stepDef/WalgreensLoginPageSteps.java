@@ -1,8 +1,12 @@
 package com.walgreens.stepDef;
 
+
 import com.walgreens.pageActions.WalgreensLoginPageActions;
 
-import cucumber.api.java.en.*;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import walgreens.utilities.SetupDrivers;
+
 
 public class WalgreensLoginPageSteps {
 	
@@ -10,7 +14,8 @@ public class WalgreensLoginPageSteps {
 	
 	@Given("^Users is in the login page$")
 	public void users_is_in_the_login_page() throws Throwable {
-	    
+		
+		SetupDrivers.driver.get("https://www.walgreens.com/login.jsp?ru=%2Fyouraccount%2Fdefault.jsp");
 	}
 
 	@When("^Users logged in with valid credential \"([^\"]*)\" and Password \"([^\"]*)\"$")
