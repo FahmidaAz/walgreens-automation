@@ -9,7 +9,7 @@ Feature: Walgreens product search Scenerio Outline
 	Then The "<Brands>" related product should be displayed
 
 Examples:
-|Products		|Brands		|
-|Toothpaste		|Colgate	|
-|Shampoo		|Dove		|
-|Pain Reliever	|Advil		|
+    |Products		    |Brands		|
+    |Toothpaste		  |Colgate	|
+    |Shampoo		    |Dove		  |
+    |Pain Reliever	|Advil		|
