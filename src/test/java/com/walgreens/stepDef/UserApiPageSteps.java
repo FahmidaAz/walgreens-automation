@@ -8,7 +8,7 @@ import cucumber.api.java.en.When;
 
 public class UserApiPageSteps {
 	UsersRestAssuredActions UsersRestAssuredActionsObj = new UsersRestAssuredActions();
-	@Given("^Create User$")
+	/*@Given("^Create User$")
 	public void create_User() throws Throwable {
 		UsersRestAssuredActionsObj.createUser();
 	}
@@ -26,7 +26,7 @@ public class UserApiPageSteps {
 	@Then("^Delete User$")
 	public void delete_User() throws Throwable {
 		UsersRestAssuredActionsObj.deleteUser();
-	}
+	}*/
 
 
 }
