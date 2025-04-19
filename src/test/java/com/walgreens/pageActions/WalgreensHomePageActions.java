@@ -1,12 +1,10 @@
 package com.walgreens.pageActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import java.time.Duration;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.walgreens.pageElements.WalgreensHomePageLocators;
+
 import walgreens.utilities.ReadExcelSheets;
 import walgreens.utilities.SetupDrivers;
 

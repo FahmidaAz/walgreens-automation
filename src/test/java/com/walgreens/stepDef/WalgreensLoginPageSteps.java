@@ -1,9 +1,12 @@
 package com.walgreens.stepDef;
 
+
 import com.walgreens.pageActions.WalgreensLoginPageActions;
 
-import cucumber.api.java.en.*;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import walgreens.utilities.SetupDrivers;
+
 
 public class WalgreensLoginPageSteps {
 	
