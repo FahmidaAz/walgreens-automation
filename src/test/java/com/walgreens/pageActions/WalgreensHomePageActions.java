@@ -1,7 +1,4 @@
 package com.walgreens.pageActions;
-
-
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -9,15 +6,12 @@ import org.openqa.selenium.support.PageFactory;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
 import com.walgreens.pageElements.WalgreensHomePageLocators;
-
 import walgreens.utilities.ReadExcelSheets;
 import walgreens.utilities.SetupDrivers;
 
 public class WalgreensHomePageActions {
-	
+
 	WalgreensHomePageLocators WalgreensHomePageLocatorsObj;
 
 
@@ -33,12 +27,11 @@ public class WalgreensHomePageActions {
 		WalgreensHomePageLocatorsObj.searchBox.sendKeys("Sunscreen");
 
 	}
-
 	public void searchBtn() throws InterruptedException {
 		Thread.sleep(5000);
 		WalgreensHomePageLocatorsObj.searchBtn.click();
 	}
-//checkBox functionality
+	//checkBox functionality
 	public void verifyHomepage(){
 		WalgreensHomePageLocatorsObj.logoLink.isDisplayed();
 	}
@@ -59,8 +52,8 @@ public class WalgreensHomePageActions {
 		JavascriptExecutor js = (JavascriptExecutor)SetupDrivers.driver;
 		js.executeScript("arguments[0].click();",WalgreensHomePageLocatorsObj.matsLink );
 	}
-	
-	
+
+
 	//click on shopNow button
 	public void clickShopBtn(){
 		WalgreensHomePageLocatorsObj.shopNowBtn.click();
@@ -70,33 +63,43 @@ public class WalgreensHomePageActions {
 	public void searchExcel() throws Exception{
 		JavascriptExecutor js = (JavascriptExecutor) SetupDrivers.driver;
 
-	    // Clear the search box
-	    js.executeScript("arguments[0].value = '';", WalgreensHomePageLocatorsObj.searchBox);
+		// Clear the search box
+		js.executeScript("arguments[0].value = '';", WalgreensHomePageLocatorsObj.searchBox);
 
-	    // Retrieve the item from Excel
-	    String item = ReadExcelSheets.getMapData("Item");
+		// Retrieve the item from Excel
+		String item = ReadExcelSheets.getMapData("Item");
 
-	    // Set the new value in the search box
-	    js.executeScript("arguments[0].value = arguments[1];", WalgreensHomePageLocatorsObj.searchBox, item);
+		// Set the new value in the search box
+		js.executeScript("arguments[0].value = arguments[1];", WalgreensHomePageLocatorsObj.searchBox, item);
 
-	    // Trigger input event to simulate typing behavior
-	    js.executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", WalgreensHomePageLocatorsObj.searchBox);
+		// Trigger input event to simulate typing behavior
+		js.executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", WalgreensHomePageLocatorsObj.searchBox);
 
-	    // Introduce a small wait to allow dropdown suggestions to appear
-	    Thread.sleep(2000);
+		// Introduce a small wait to allow dropdown suggestions to appear
+		Thread.sleep(2000);
 
-	    // Option 1: Simulate pressing Enter key to trigger search
-	    WalgreensHomePageLocatorsObj.searchBox.sendKeys(Keys.ENTER);
+		// Option 1: Simulate pressing Enter key to trigger search
+		WalgreensHomePageLocatorsObj.searchBox.sendKeys(Keys.ENTER);
 	}
-		   
-	public void searchProduct(String productName) throws Exception{
-	WalgreensHomePageLocatorsObj.searchTextBox.sendKeys(productName);
+
+	/*public void searchProduct(String productName) throws Exception{
+		WalgreensHomePageLocatorsObj.searchTextBox.sendKeys(productName);
 		
-	}
-	public void clickSearchButton() throws Exception{
-		WalgreensHomePageLocatorsObj.searchButton.click();
-		Thread.sleep(4000);
-	}
-	
+				SetupDrivers driver;
 
-}
+		public WalgreensHomePageActions(WebDriver driver){
+
+			SetupDrivers.driver = driver;
+			WalgreensHomePageLocatorsObj = new WalgreensHomePageLocators(driver);
+		}*/
+		public void searchProduct(String productName) throws Exception{
+			WalgreensHomePageLocatorsObj.searchTextBox.sendKeys(productName);
+
+		}
+		public void clickSearchButton() throws Exception{
+			WalgreensHomePageLocatorsObj.searchButton.click();
+			Thread.sleep(4000);
+		}
+
+
+	}
