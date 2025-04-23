@@ -1,7 +1,8 @@
 package com.walgreens.stepDef;
 
+
 import com.walgreens.pageActions.WalgreensHomePageActions;
-import cucumber.api.PendingException;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 
@@ -92,5 +93,8 @@ public class WalgreensHomePageSteps {
 	public void open_Walgreens_Homepage() throws Throwable {
 	  
 	}
+	
+	
+	
 
 }
